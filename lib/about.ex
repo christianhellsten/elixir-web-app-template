@@ -10,10 +10,8 @@ defmodule Web.About do
   # https://hexdocs.pm/plug/Plug.Conn.html
   #
   import Plug.Conn
-  # Matches request to a route
-  plug :match
-  # Dispatches request to a route
-  plug :dispatch
+  use Controller
+  view :about, 'about'
 
   #
   # HTTP GET /
@@ -22,6 +20,7 @@ defmodule Web.About do
   #   conn.private[:protected]
   #
   get "/", private: %{protected: false} do
-    conn |> send_resp(200, "Noooo")
+    conn
+    |> render(:about, title: "About")
   end
 end
