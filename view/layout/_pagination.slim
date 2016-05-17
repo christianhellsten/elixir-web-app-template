@@ -1,0 +1,5 @@
+.pagination
+  = link_to_prev_page(@paginated, @conn)
+  = if @paginated.has_prev? do
+    '&nbsp;
+  = link_to_next_page(@paginated, @conn)

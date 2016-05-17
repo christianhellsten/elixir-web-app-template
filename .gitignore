@@ -1,0 +1,46 @@
+# Elixir
+_build/
+deps/
+doc/
+rel/
+
+erl_crash.dump
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
+
+# NPM packages folder.
+node_modules/
+
+# Brunch folder for temporary files.
+tmp/
+
+backups/
+
+# Bower stuff.
+bower_components/
+*.gz
+
+# src
+phoenix/
+ecto/
+elixir/
+plug/

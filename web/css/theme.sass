@@ -1,0 +1,164 @@
+$header-font: 'Helvetica Neue', sans-serif
+$body-font: "Helvetica Neue", sans-serif
+
+$link-color: #3F51B5
+$body-color: #222
+$header-color: #222
+$light-grey: #efefef
+$dark-grey: #bbb
+
+$menu-color: $link-color
+$menu-hover-color: #222
+$menu-visited-color: $link-color
+
+$margin-right: 0.5rem
+$bold-weight: 500
+
+.button
+  font-weight: 500
+
+.button-small
+  padding: 0 10px
+  height: 28px
+  line-height: 28px
+  border-radius: 3px
+
+*
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  color: #222
+  font-family: $body-font
+  color: $body-color
+  text-rendering: optimizeLegibility
+  -webkit-font-feature-settings: "kern", "liga", "case"
+  -moz-font-feature-settings: "kern", "liga" , "case"
+  font-feature-settings: "kern", "liga", "case"
+
+
+h1
+  margin-left: -0.1rem
+  text-transform: uppercase
+  letter-spacing: -2px
+  font-family: $header-font
+  line-height: 4.9rem
+  a, a:visited
+    color: #444
+    font-weight: 800
+
+h2
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: -2px
+  line-height: 4.5rem
+
+h2, h3, h4, h5
+  font-weight: 500
+  a, a:visited
+    color: $body-color
+    font-weight: 300
+
+small
+  color: #999
+
+a
+  color: $link-color
+  text-decoration: none
+
+a:visited
+  color: #2196F3
+
+#header
+  margin-top: 1em
+  margin-bottom: 1em
+
+#menu, #user-menu
+  margin: 0
+  padding-top: 1rem
+  a, a:visited
+    color: #222
+  .button
+    margin-left: $margin-right
+
+a.button
+  color: #555
+
+#menu
+  text-transform: uppercase
+
+#username
+  font-weight: 800
+  color: $body-color
+
+#user-menu
+  font-size: 1.3rem
+  text-align: right
+
+strong, em
+  font-weight: 500
+
+ol, ul
+  list-style-position: outside
+  margin-left: 0
+  padding-left: 0
+
+ul.no-style, ol.no-style
+  li
+    display: inline
+    margin-right: $margin-right
+    a
+      display: inline-block
+  li.sep
+    color: $light-grey
+    font-weight: 300
+
+body.signed-out
+  .signed-in
+    display: none
+
+body.signed-in
+  .signed-out
+    display: none
+
+input, textarea, input[type="submit"], input[type="reset"], input[type="button"]
+  font-family: $body-font
+
+input.submit
+  font-weight: 500
+
+select.error, textarea.error, input.error
+  border: 1px solid darkred
+
+.hidden
+  display: none
+
+#footer
+  padding-top: 1rem
+  ul
+    padding: 0
+  li
+    margin-right: $margin-right
+
+#dropdowns
+  padding: 0
+  ul
+    padding: 0
+    margin: 0
+
+.right-align
+  text-align: right
+
+ul, li
+  list-style-type: square
+
+#flash
+  margin-bottom: 2.5rem
+  display: none
+
+.flash_info
+  color: darkgreen
+
+.flash_error
+  color: darkred
